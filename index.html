@@ -68,6 +68,8 @@ input{
                else if (output > 40)
                     document.getElementById("comment").innerText = "Morbid Obesity";  
                 }
-                
+                document.querySelector("body > p:nth-child(1) > i").addEventListener('click', ()=>{
+                    document.querySelector("body > p:nth-child(1) > i").innerText = 'Angel';
+                })
         </script>
         </html>
