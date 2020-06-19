@@ -5,11 +5,27 @@
             
          </head>
          <style>
-*{font-family: monospace;
-}
-input{
-      border: 2px solid red;
-}
+             html{
+                text-align: -webkit-center;
+
+             }
+            *{font-family: monospace;
+            }
+            input{
+                border: 3px groove red;
+            }
+            body{   
+                 border: 5px inset red;
+                 text-align: -webkit-center;
+                 width: fit-content;
+                 padding: 30px;
+                 }
+                 i{
+                    border: 5px groove red;
+                    padding: 10px 20px 10px 20px;
+                    border-radius: 10px;
+
+                 }
 
          </style>
          <body>
@@ -69,7 +85,7 @@ input{
                     document.getElementById("comment").innerText = "Morbid Obesity";  
                 }
                 document.querySelector("body > p:nth-child(1) > i").addEventListener('click', ()=>{
-                    document.querySelector("body > p:nth-child(1) > i").innerText === 'user'? document.querySelector("body > p:nth-child(1) > i").innerText = 'angel': document.querySelector("body > p:nth-child(1) > i").innerText = 'user';
+                    document.querySelector("body > p:nth-child(1) > i").innerText === 'User'? document.querySelector("body > p:nth-child(1) > i").innerText = 'Ultra Cool User': document.querySelector("body > p:nth-child(1) > i").innerText = 'User';
                 })
         </script>
         </html>
