@@ -9,6 +9,8 @@
                 text-align: -webkit-center;
 
              }
+
+                
             *{font-family: monospace;
             }
             input{
@@ -109,8 +111,8 @@
                 var BMI = Math.round(weight*703 / Math.pow(height, 2));
         
                 //Display result of calculation
-                document.getElementById("output").innerText = Math.round(BMI * 100) / 100;
-        
+                document.getElementById("output").innerText = 'Lala'
+
                 var output = Math.round(BMI * 100) / 100
                 if (output < 18.5)
                     document.getElementById("comment").innerText = "Underweight";
@@ -125,13 +127,22 @@
                else if (output > 40)
                     document.getElementById("comment").innerText = "Morbid Obesity";  
                 }
+
+
+
+
                 document.querySelector("body > p:nth-child(1) > i").addEventListener('click', ()=>{
                     document.querySelector("body > p:nth-child(1) > i").innerText === 'User'? document.querySelector("body > p:nth-child(1) > i").innerText = 'Ultra Cool User': document.querySelector("body > p:nth-child(1) > i").innerText = 'User';
                     document.querySelector("body > p:nth-child(1) > i").innerText === 'User'?goStale():goCrazy()
-                    
+
+
+
+
                     function goCrazy () {let x = document.querySelectorAll('p')
                     for (let i = 0; i < x.length; i++) {
                         x[i].className = "red";
+
+                        
                     }}
                     function goStale () {let x = document.querySelectorAll('p')
                     for (let i = 0; i < x.length; i++) {
